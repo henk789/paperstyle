@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paperstyle"
+version = "0.1.0"
+description = "Opinionated Matplotlib styling for research figures."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Hendrik Kraß" }]
+dependencies = ["matplotlib>=3.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
