@@ -1,212 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
 <svg width="482.16pt" height="151.68pt" version="1.1" viewBox="0 0 482.16 151.68" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
 </defs>
-<g id="d">
-<g id="e">
 <path d="m0 151.68h482.16v-151.68h-482.16z" fill="#fff"/>
-</g>
-<g id="f">
-<g id="g">
-<path d="m27.495 125.94h450.25v-124.86h-450.25z" fill="#fff"/>
-</g>
-<g id="h">
-<g id="i">
-<g id="j">
+<path d="m27.495 126.02h450.25v-124.94h-450.25z" fill="#fff"/>
 <defs>
 <path id="c" d="m0 0v3" stroke="#000" stroke-width=".5"/>
 </defs>
-<use x="27.495313" y="125.937333" stroke="#000000" stroke-width=".5" xlink:href="#c"/>
+<use x="27.495313" y="126.017332" stroke="#000000" stroke-width=".5" xlink:href="#c"/>
+<text transform="rotate(-0 27.495 136.89)" x="27.495313" y="136.891707" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="middle">0</text>
+<use x="117.545029" y="126.017332" stroke="#000000" stroke-width=".5" xlink:href="#c"/>
+<text transform="rotate(-0 117.55 136.89)" x="117.545029" y="136.891707" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="middle">2</text>
+<use x="207.594745" y="126.017332" stroke="#000000" stroke-width=".5" xlink:href="#c"/>
+<text transform="rotate(-0 207.59 136.89)" x="207.594745" y="136.891707" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="middle">4</text>
+<use x="297.644462" y="126.017332" stroke="#000000" stroke-width=".5" xlink:href="#c"/>
+<text transform="rotate(-0 297.64 136.89)" x="297.644462" y="136.891707" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="middle">6</text>
+<use x="387.694178" y="126.017332" stroke="#000000" stroke-width=".5" xlink:href="#c"/>
+<text transform="rotate(-0 387.69 136.89)" x="387.694178" y="136.891707" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="middle">8</text>
+<use x="477.743895" y="126.017332" stroke="#000000" stroke-width=".5" xlink:href="#c"/>
+<text transform="rotate(-0 477.74 136.89)" x="477.743895" y="136.891707" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="middle">10</text>
+<g transform="translate(217.5 148.84)">
+<text><tspan x="0" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">T</tspan> <tspan x="4.887985" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">r</tspan> <tspan x="7.551971" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">a</tspan> <tspan x="11.999954" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">i</tspan> <tspan x="13.77594" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">n</tspan> <tspan x="18.223923" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">i</tspan> <tspan x="19.999908" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">n</tspan> <tspan x="24.447891" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">g</tspan> <tspan x="28.895874" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px"></tspan> <tspan x="31.119858" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">s</tspan> <tspan x="35.119843" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">t</tspan> <tspan x="37.343826" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">e</tspan> <tspan x="41.791809" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">p</tspan> <tspan x="46.239792" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px"></tspan> <tspan x="48.463776" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">(</tspan> <tspan x="67.524419" y="-0.390625" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px">)</tspan> <tspan x="51.127762" y="-0.390625" font-family="'STIXGeneral'" font-size="8px">×</tspan> <tspan x="56.247742" y="-0.390625" font-family="'STIXGeneral'" font-size="8px">1</tspan> <tspan x="60.247726" y="-0.390625" font-family="'STIXGeneral'" font-size="8px">0</tspan> <tspan x="64.371305" y="-3.215625" font-family="'STIXGeneral'" font-size="5.6px">3</tspan></text>
 </g>
-<g id="k">
-<text transform="rotate(-0 27.495 136.81)" x="27.495313" y="136.811708" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="middle">0</text>
-</g>
-</g>
-<g id="l">
-<g id="m">
-<use x="117.545029" y="125.937333" stroke="#000000" stroke-width=".5" xlink:href="#c"/>
-</g>
-<g id="n">
-<text transform="rotate(-0 117.55 136.81)" x="117.545029" y="136.811708" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="middle">2</text>
-</g>
-</g>
-<g id="o">
-<g id="p">
-<use x="207.594745" y="125.937333" stroke="#000000" stroke-width=".5" xlink:href="#c"/>
-</g>
-<g id="q">
-<text transform="rotate(-0 207.59 136.81)" x="207.594745" y="136.811708" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="middle">4</text>
-</g>
-</g>
-<g id="r">
-<g id="s">
-<use x="297.644462" y="125.937333" stroke="#000000" stroke-width=".5" xlink:href="#c"/>
-</g>
-<g id="t">
-<text transform="rotate(-0 297.64 136.81)" x="297.644462" y="136.811708" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="middle">6</text>
-</g>
-</g>
-<g id="u">
-<g id="v">
-<use x="387.694178" y="125.937333" stroke="#000000" stroke-width=".5" xlink:href="#c"/>
-</g>
-<g id="w">
-<text transform="rotate(-0 387.69 136.81)" x="387.694178" y="136.811708" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="middle">8</text>
-</g>
-</g>
-<g id="x">
-<g id="y">
-<use x="477.743895" y="125.937333" stroke="#000000" stroke-width=".5" xlink:href="#c"/>
-</g>
-<g id="z">
-<text transform="rotate(-0 477.74 136.81)" x="477.743895" y="136.811708" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="middle">10</text>
-</g>
-</g>
-<g id="aa">
-<!-- Training step ($\times 10^3$) -->
-<g transform="translate(217.62 148.84)">
-<text><tspan x="0" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">T</tspan> <tspan x="4.887985" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">r</tspan> <tspan x="7.551971" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">a</tspan> <tspan x="11.999954" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">i</tspan> <tspan x="13.77594" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">n</tspan> <tspan x="18.223923" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">i</tspan> <tspan x="19.999908" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">n</tspan> <tspan x="24.447891" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">g</tspan> <tspan x="28.895874" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px"></tspan> <tspan x="31.119858" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">s</tspan> <tspan x="35.119843" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">t</tspan> <tspan x="37.343826" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">e</tspan> <tspan x="41.791809" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">p</tspan> <tspan x="46.239792" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px"></tspan> <tspan x="48.463776" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">(</tspan> <tspan x="67.292388" y="-0.315625" font-family="'Nimbus Sans'" font-size="8px">)</tspan> <tspan x="51.127762" y="-0.315625" font-family="'STIXGeneral'" font-size="8px">×</tspan> <tspan x="56.247742" y="-0.315625" font-family="'STIXGeneral'" font-size="8px">𝟣</tspan> <tspan x="60.247726" y="-0.315625" font-family="'STIXGeneral'" font-size="8px">𝟢</tspan> <tspan x="64.311149" y="-3.215625" font-family="'STIXGeneral'" font-size="5.6px">𝟥</tspan></text>
-</g>
-</g>
-</g>
-<g id="ab">
-<g id="ac">
-<g id="ad">
 <defs>
 <path id="a" d="m0 0h-3" stroke="#000" stroke-width=".5"/>
 </defs>
-<use x="27.495313" y="113.213428" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
-</g>
-<g id="ae">
-<text transform="rotate(-0 20.995 115.4)" x="20.995313" y="115.400616" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.2</text>
-</g>
-</g>
-<g id="af">
-<g id="ag">
-<use x="27.495313" y="96.000345" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
-</g>
-<g id="ah">
-<text transform="rotate(-0 20.995 98.188)" x="20.995313" y="98.187532" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.3</text>
-</g>
-</g>
-<g id="ai">
-<g id="aj">
-<use x="27.495313" y="78.787261" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
-</g>
-<g id="ak">
-<text transform="rotate(-0 20.995 80.974)" x="20.995313" y="80.974449" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.4</text>
-</g>
-</g>
-<g id="al">
-<g id="am">
-<use x="27.495313" y="61.574177" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
-</g>
-<g id="an">
-<text transform="rotate(-0 20.995 63.761)" x="20.995313" y="63.761365" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.5</text>
-</g>
-</g>
-<g id="ao">
-<g id="ap">
-<use x="27.495313" y="44.361094" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
-</g>
-<g id="aq">
-<text transform="rotate(-0 20.995 46.548)" x="20.995313" y="46.548281" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.6</text>
-</g>
-</g>
-<g id="ar">
-<g id="as">
-<use x="27.495313" y="27.14801" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
-</g>
-<g id="at">
-<text transform="rotate(-0 20.995 29.335)" x="20.995313" y="29.335198" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.7</text>
-</g>
-</g>
-<g id="au">
-<g id="av">
-<use x="27.495313" y="9.934927" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
-</g>
-<g id="aw">
-<text transform="rotate(-0 20.995 12.122)" x="20.995313" y="12.122114" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.8</text>
-</g>
-</g>
-<g id="ax">
-<text transform="rotate(-90 6.9125 63.509)" x="6.9125" y="63.508666" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px" text-anchor="middle">Validation error</text>
-</g>
-</g>
-<g id="ay">
-<path d="m27.495 39.197 7.5461-2.3436 7.5461-2.0836 5.0307-1.1917 5.0307-1.0011 5.0307-0.78623 5.0307-0.5506 5.0307-0.29794 5.0307-0.032065 5.0307 0.24314 5.0307 0.52378 5.0307 0.806 5.0307 1.086 5.0307 1.3602 5.0307 1.6251 5.0307 1.8774 5.0307 2.1142 5.0307 2.3326 5.0307 2.5303 7.5461 4.1156 7.5461 4.4244 10.061 6.2227 25.154 15.798 7.5461 4.4391 7.5461 4.1585 7.5461 3.8126 5.0307 2.3223 5.0307 2.1314 5.0307 1.9301 5.0307 1.721 5.0307 1.5069 5.0307 1.2905 5.0307 1.0742 5.0307 0.86071 5.0307 0.65245 5.0307 0.45175 5.0307 0.26077 5.0307 0.081508 5.0307-0.084241 7.5461-0.40375 7.5461-0.68602 7.5461-0.90689 10.061-1.441 27.669-4.1448 7.5461-0.89824 7.5461-0.7034 7.5461-0.47012 7.5461-0.20694 7.5461 0.07711 7.5461 0.37279 7.5461 0.6709 7.5461 0.96256 7.5461 1.2394 7.5461 1.4939 7.5461 1.7192 10.061 2.5824 10.061 2.8272 20.123 5.9775 15.092 4.3587 10.061 2.669 7.5461 1.821v0" clip-path="url(#b)" fill="none" stroke="#5f4690" stroke-linecap="square"/>
-</g>
-<g id="az">
-<path d="m27.495 18.804 5.0307-0.52767 5.0307-0.24865 5.0307 0.043631 5.0307 0.34493 5.0307 0.65102 5.0307 0.95774 5.0307 1.261 5.0307 1.5569 5.0307 1.8417 5.0307 2.112 5.0307 2.3644 5.0307 2.5963 5.0307 2.8049 7.5461 4.5425 7.5461 4.8613 10.061 6.8058 22.638 15.488 7.5461 4.8687 7.5461 4.5758 5.0307 2.8512 5.0307 2.6697 5.0307 2.4721 5.0307 2.2611 5.0307 2.0397 5.0307 1.8106 5.0307 1.5767 5.0307 1.3411 5.0307 1.1064 5.0307 0.87544 5.0307 0.65088 5.0307 0.43517 5.0307 0.23063 5.0307 0.039372 5.0307-0.13671 7.5461-0.49801 7.5461-0.79356 7.5461-1.0216 10.061-1.5947 25.154-4.1176 7.5461-1.0058 7.5461-0.80123 7.5461-0.55346 7.5461-0.27167 7.5461 0.034374 7.5461 0.35465 7.5461 0.67912 7.5461 0.99805 7.5461 1.3023 7.5461 1.5833 7.5461 1.8338 7.5461 2.0475 10.061 2.9897 12.577 4.0004 22.638 7.2681 10.061 2.9951 7.5461 2.0689 7.5461 1.8814 7.5461 1.6685 7.5461 1.4367 7.5461 1.1929 5.0307 0.65697v0" clip-path="url(#b)" fill="none" stroke="#e17c05" stroke-linecap="square"/>
-</g>
-<g id="ba">
-<path d="m27.495 6.7553 5.0307 1.4577 5.0307 1.7767 5.0307 2.0827 5.0307 2.3718 5.0307 2.6408 5.0307 2.8865 5.0307 3.1063 7.5461 5.0094 7.5461 5.3375 10.061 7.4387 20.123 14.994 7.5461 5.3373 7.5461 5.0322 5.0307 3.1446 5.0307 2.9517 5.0307 2.7406 5.0307 2.5143 5.0307 2.2759 5.0307 2.0284 5.0307 1.775 5.0307 1.5188 5.0307 1.2631 5.0307 1.0107 5.0307 0.76454 5.0307 0.52743 5.0307 0.3019 5.0307 0.090294 5.0307-0.10527 5.0307-0.28292 7.5461-0.71447 7.5461-0.99901 10.061-1.6439 32.7-5.722 7.5461-0.98692 7.5461-0.73927 7.5461-0.44962 7.5461-0.12833 5.0307 0.10368 5.0307 0.25943 5.0307 0.4165 5.0307 0.57276 5.0307 0.72619 7.5461 1.366 7.5461 1.6762 7.5461 1.9543 7.5461 2.1934 10.061 3.2186 12.577 4.3298 25.154 8.7673 10.061 3.2228 7.5461 2.2165 7.5461 2.0072 7.5461 1.7714 7.5461 1.5165 7.5461 1.2498 7.5461 0.97875 7.5461 0.71076 7.5461 0.45277 7.5461 0.21118 5.0307 0.017281v0" clip-path="url(#b)" fill="none" stroke="#38a6a5" stroke-linecap="square"/>
-</g>
-<g id="bb">
-<path d="m27.495 7.4711 5.0307 3.4368 7.5461 5.5198 7.5461 5.8561 10.061 8.1252 17.607 14.286 7.5461 5.8482 7.5461 5.5313 5.0307 3.4663 5.0307 3.2615 5.0307 3.0363 5.0307 2.7938 5.0307 2.5372 5.0307 2.2701 5.0307 1.9957 5.0307 1.7175 5.0307 1.4389 5.0307 1.1632 5.0307 0.89367 5.0307 0.63322 5.0307 0.38473 5.0307 0.1508 5.0307-0.066188 5.0307-0.26416 5.0307-0.4413 7.5461-0.94492 7.5461-1.213 10.061-1.8898 22.638-4.4279 7.5461-1.2535 7.5461-1.0296 7.5461-0.7514 5.0307-0.32432 5.0307-0.17082 5.0307-0.00947 5.0307 0.15739 5.0307 0.32739 5.0307 0.49821 5.0307 0.66757 5.0307 0.83326 5.0307 0.9932 7.5461 1.7723 7.5461 2.0808 7.5461 2.348 7.5461 2.5673 10.061 3.673 37.73 14.146 7.5461 2.5096 7.5461 2.2987 7.5461 2.0554 7.5461 1.7874 7.5461 1.5025 7.5461 1.209 7.5461 0.91497 7.5461 0.62813 7.5461 0.3558 7.5461 0.10458 7.5461-0.11976 7.5461-0.31243 10.061-0.6547 7.5461-0.61999v0" clip-path="url(#b)" fill="none" stroke="#cc503e" stroke-linecap="square"/>
-</g>
-<g id="bc">
-<path d="m27.495 19.368 15.092 13.332 7.5461 6.4049 7.5461 6.0769 5.0307 3.8188 5.0307 3.6018 5.0307 3.3618 5.0307 3.1021 5.0307 2.8263 5.0307 2.5381 5.0307 2.2412 5.0307 1.9393 5.0307 1.636 5.0307 1.3352 5.0307 1.0401 5.0307 0.75422 5.0307 0.48063 5.0307 0.22224 5.0307-0.018307 5.0307-0.23867 5.0307-0.43682 5.0307-0.61104 7.5461-1.1876 7.5461-1.4332 12.577-2.6851 15.092-3.199 7.5461-1.3955 7.5461-1.1622 7.5461-0.8681 5.0307-0.39045 5.0307-0.22588 5.0307-0.052173 5.0307 0.12813 5.0307 0.31245 5.0307 0.49826 5.0307 0.68305 5.0307 0.86441 5.0307 1.04 5.0307 1.2077 7.5461 2.1039 7.5461 2.4174 7.5461 2.6823 10.061 3.8928 12.577 5.1748 20.123 8.3202 10.061 3.8838 7.5461 2.6919 7.5461 2.4557 7.5461 2.1857 7.5461 1.8903 7.5461 1.5782 7.5461 1.2583 7.5461 0.93922 7.5461 0.62948 7.5461 0.33685 7.5461 0.068353 7.5461-0.16991 7.5461-0.37292 10.061-0.74506 12.577-1.189 25.154-2.4883v0" clip-path="url(#b)" fill="none" stroke="#1d6996" stroke-linecap="square"/>
-</g>
-<g id="bd">
-<path d="m27.495 35.604 5.0307 4.0935 5.0307 3.8505 5.0307 3.5835 5.0307 3.296 5.0307 2.9921 5.0307 2.6757 5.0307 2.3509 5.0307 2.0218 5.0307 1.6923 5.0307 1.3664 5.0307 1.0477 5.0307 0.74002 5.0307 0.44654 5.0307 0.17039 5.0307-0.08566 5.0307-0.31913 5.0307-0.52791 5.0307-0.71024 7.5461-1.346 7.5461-1.5956 12.577-2.9427 12.577-2.9056 7.5461-1.5508 7.5461-1.3084 5.0307-0.70362 5.0307-0.5483 5.0307-0.37836 5.0307-0.19647 5.0307-0.005362 5.0307 0.19217 5.0307 0.39334 5.0307 0.5954 5.0307 0.79564 5.0307 0.99148 5.0307 1.1804 5.0307 1.3602 5.0307 1.5286 7.5461 2.5792 7.5461 2.876 7.5461 3.1141 10.061 4.4118 30.184 13.512 7.5461 3.1057 7.5461 2.8854 7.5461 2.6214 7.5461 2.3223 7.5461 1.9971 5.0307 1.1422 5.0307 0.98762 5.0307 0.83247 5.0307 0.67857 7.5461 0.7364 7.5461 0.41468 7.5461 0.11808 7.5461-0.14661 7.5461-0.37373 10.061-0.77863 12.577-1.2719 27.669-2.9605 10.061-0.81761 10.061-0.54974 7.5461-0.20139 2.5154-0.02333v0" clip-path="url(#b)" fill="none" stroke="#73af48" stroke-linecap="square"/>
-</g>
-<g id="be">
-<path d="m27.495 125.94v-124.86" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".5"/>
-</g>
-<g id="bf">
-<path d="m477.74 125.94v-124.86" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".5"/>
-</g>
-<g id="bg">
-<path d="m27.495 125.94h450.25" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".5"/>
-</g>
-<g id="bh">
+<use x="27.495313" y="113.285276" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
+<text transform="rotate(-0 20.995 115.47)" x="20.995313" y="115.472463" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.2</text>
+<use x="27.495313" y="96.061163" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
+<text transform="rotate(-0 20.995 98.248)" x="20.995313" y="98.248351" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.3</text>
+<use x="27.495313" y="78.83705" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
+<text transform="rotate(-0 20.995 81.024)" x="20.995313" y="81.024238" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.4</text>
+<use x="27.495313" y="61.612938" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
+<text transform="rotate(-0 20.995 63.8)" x="20.995313" y="63.800125" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.5</text>
+<use x="27.495313" y="44.388825" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
+<text transform="rotate(-0 20.995 46.576)" x="20.995313" y="46.576013" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.6</text>
+<use x="27.495313" y="27.164713" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
+<text transform="rotate(-0 20.995 29.352)" x="20.995313" y="29.3519" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.7</text>
+<use x="27.495313" y="9.9406" stroke="#000000" stroke-width=".5" xlink:href="#a"/>
+<text transform="rotate(-0 20.995 12.128)" x="20.995313" y="12.127788" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px" text-anchor="end">0.8</text>
+<text transform="rotate(-90 6.9125 63.549)" x="6.9125" y="63.548666" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="8px" text-anchor="middle">Validation error</text>
+<path d="m27.495 39.222 7.5461-2.3451 7.5461-2.0849 5.0307-1.1925 5.0307-1.0018 5.0307-0.78674 5.0307-0.55096 5.0307-0.29813 5.0307-0.032086 5.0307 0.2433 5.0307 0.52412 5.0307 0.80652 5.0307 1.0867 5.0307 1.3611 5.0307 1.6261 5.0307 1.8786 5.0307 2.1155 5.0307 2.3341 5.0307 2.5319 7.5461 4.1182 7.5461 4.4272 10.061 6.2267 25.154 15.808 7.5461 4.442 7.5461 4.1612 7.5461 3.815 5.0307 2.3238 5.0307 2.1328 5.0307 1.9313 5.0307 1.7221 5.0307 1.5079 5.0307 1.2913 5.0307 1.0749 5.0307 0.86126 5.0307 0.65287 5.0307 0.45204 5.0307 0.26094 5.0307 0.081561 5.0307-0.084295 7.5461-0.40401 7.5461-0.68646 7.5461-0.90747 10.061-1.442 27.669-4.1475 7.5461-0.89881 7.5461-0.70385 7.5461-0.47042 7.5461-0.20708 7.5461 0.07716 7.5461 0.37303 7.5461 0.67133 7.5461 0.96318 7.5461 1.2402 7.5461 1.4948 7.5461 1.7203 10.061 2.584 10.061 2.829 20.123 5.9813 15.092 4.3615 10.061 2.6707 7.5461 1.8222v0" clip-path="url(#b)" fill="none" stroke="#5f4690" stroke-linecap="square"/>
+<path d="m27.495 18.815 5.0307-0.528 5.0307-0.24881 5.0307 0.043659 5.0307 0.34515 5.0307 0.65144 5.0307 0.95835 5.0307 1.2618 5.0307 1.5579 5.0307 1.8429 5.0307 2.1133 5.0307 2.366 5.0307 2.5979 5.0307 2.8067 7.5461 4.5454 7.5461 4.8644 10.061 6.8102 22.638 15.498 7.5461 4.8719 7.5461 4.5787 5.0307 2.853 5.0307 2.6714 5.0307 2.4736 5.0307 2.2626 5.0307 2.041 5.0307 1.8117 5.0307 1.5777 5.0307 1.3419 5.0307 1.1071 5.0307 0.876 5.0307 0.65129 5.0307 0.43545 5.0307 0.23078 5.0307 0.039397 5.0307-0.1368 7.5461-0.49833 7.5461-0.79406 7.5461-1.0222 10.061-1.5957 25.154-4.1203 7.5461-1.0064 7.5461-0.80174 7.5461-0.55382 7.5461-0.27185 7.5461 0.034396 7.5461 0.35488 7.5461 0.67955 7.5461 0.99869 7.5461 1.3031 7.5461 1.5843 7.5461 1.835 7.5461 2.0488 10.061 2.9916 12.577 4.003 22.638 7.2727 10.061 2.997 7.5461 2.0702 7.5461 1.8826 7.5461 1.6696 7.5461 1.4376 7.5461 1.1936 5.0307 0.65739v0" clip-path="url(#b)" fill="none" stroke="#e17c05" stroke-linecap="square"/>
+<path d="m27.495 6.759 5.0307 1.4587 5.0307 1.7779 5.0307 2.084 5.0307 2.3733 5.0307 2.6425 5.0307 2.8883 5.0307 3.1083 7.5461 5.0126 7.5461 5.3409 10.061 7.4435 20.123 15.004 7.5461 5.3408 7.5461 5.0354 5.0307 3.1466 5.0307 2.9536 5.0307 2.7424 5.0307 2.5159 5.0307 2.2773 5.0307 2.0297 5.0307 1.7761 5.0307 1.5198 5.0307 1.2639 5.0307 1.0113 5.0307 0.76503 5.0307 0.52777 5.0307 0.30209 5.0307 0.090353 5.0307-0.10534 5.0307-0.2831 7.5461-0.71493 7.5461-0.99965 10.061-1.645 32.7-5.7256 7.5461-0.98755 7.5461-0.73974 7.5461-0.44991 7.5461-0.12841 5.0307 0.10375 5.0307 0.2596 5.0307 0.41676 5.0307 0.57313 5.0307 0.72666 7.5461 1.3668 7.5461 1.6773 7.5461 1.9556 7.5461 2.1948 10.061 3.2206 12.577 4.3326 25.154 8.7729 10.061 3.2249 7.5461 2.2179 7.5461 2.0085 7.5461 1.7726 7.5461 1.5175 7.5461 1.2506 7.5461 0.97937 7.5461 0.71122 7.5461 0.45306 7.5461 0.21132 5.0307 0.017292v0" clip-path="url(#b)" fill="none" stroke="#38a6a5" stroke-linecap="square"/>
+<path d="m27.495 7.4752 5.0307 3.439 7.5461 5.5233 7.5461 5.8599 10.061 8.1304 17.607 14.296 7.5461 5.852 7.5461 5.5349 5.0307 3.4685 5.0307 3.2636 5.0307 3.0383 5.0307 2.7956 5.0307 2.5389 5.0307 2.2715 5.0307 1.9969 5.0307 1.7186 5.0307 1.4398 5.0307 1.164 5.0307 0.89424 5.0307 0.63363 5.0307 0.38498 5.0307 0.1509 5.0307-0.066231 5.0307-0.26432 5.0307-0.44158 7.5461-0.94553 7.5461-1.2138 10.061-1.891 22.638-4.4308 7.5461-1.2543 7.5461-1.0303 7.5461-0.75188 5.0307-0.32452 5.0307-0.17093 5.0307-0.009476 5.0307 0.15749 5.0307 0.3276 5.0307 0.49853 5.0307 0.66799 5.0307 0.83379 5.0307 0.99383 7.5461 1.7734 7.5461 2.0822 7.5461 2.3495 7.5461 2.569 10.061 3.6754 37.73 14.155 7.5461 2.5112 7.5461 2.3001 7.5461 2.0567 7.5461 1.7885 7.5461 1.5035 7.5461 1.2098 7.5461 0.91555 7.5461 0.62853 7.5461 0.35603 7.5461 0.10465 7.5461-0.11983 7.5461-0.31263 10.061-0.65512 7.5461-0.62039v0" clip-path="url(#b)" fill="none" stroke="#cc503e" stroke-linecap="square"/>
+<path d="m27.495 19.38 15.092 13.341 7.5461 6.409 7.5461 6.0808 5.0307 3.8213 5.0307 3.6041 5.0307 3.3639 5.0307 3.1041 5.0307 2.8281 5.0307 2.5397 5.0307 2.2426 5.0307 1.9405 5.0307 1.6371 5.0307 1.336 5.0307 1.0408 5.0307 0.7547 5.0307 0.48094 5.0307 0.22239 5.0307-0.018319 5.0307-0.23883 5.0307-0.4371 5.0307-0.61143 7.5461-1.1884 7.5461-1.4341 12.577-2.6869 15.092-3.2011 7.5461-1.3963 7.5461-1.1629 7.5461-0.86866 5.0307-0.3907 5.0307-0.22603 5.0307-0.052206 5.0307 0.12821 5.0307 0.31266 5.0307 0.49858 5.0307 0.68349 5.0307 0.86496 5.0307 1.0407 5.0307 1.2085 7.5461 2.1052 7.5461 2.419 7.5461 2.684 10.061 3.8953 12.577 5.1781 20.123 8.3256 10.061 3.8863 7.5461 2.6936 7.5461 2.4573 7.5461 2.1871 7.5461 1.8915 7.5461 1.5792 7.5461 1.2591 7.5461 0.93982 7.5461 0.62988 7.5461 0.33706 7.5461 0.068397 7.5461-0.17002 7.5461-0.37316 10.061-0.74554 12.577-1.1898 25.154-2.4899v0" clip-path="url(#b)" fill="none" stroke="#1d6996" stroke-linecap="square"/>
+<path d="m27.495 35.626 5.0307 4.0962 5.0307 3.853 5.0307 3.5858 5.0307 3.2981 5.0307 2.994 5.0307 2.6774 5.0307 2.3524 5.0307 2.0231 5.0307 1.6934 5.0307 1.3672 5.0307 1.0484 5.0307 0.7405 5.0307 0.44683 5.0307 0.1705 5.0307-0.085716 5.0307-0.31934 5.0307-0.52825 5.0307-0.71069 7.5461-1.3469 7.5461-1.5966 12.577-2.9446 12.577-2.9075 7.5461-1.5518 7.5461-1.3093 5.0307-0.70407 5.0307-0.54865 5.0307-0.3786 5.0307-0.19659 5.0307-0.005365 5.0307 0.19229 5.0307 0.3936 5.0307 0.59578 5.0307 0.79615 5.0307 0.99212 5.0307 1.1812 5.0307 1.3611 5.0307 1.5296 7.5461 2.5808 7.5461 2.8778 7.5461 3.1161 10.061 4.4147 30.184 13.521 7.5461 3.1077 7.5461 2.8873 7.5461 2.6231 7.5461 2.3237 7.5461 1.9983 5.0307 1.1429 5.0307 0.98825 5.0307 0.833 5.0307 0.679 7.5461 0.73687 7.5461 0.41494 7.5461 0.11815 7.5461-0.1467 7.5461-0.37397 10.061-0.77913 12.577-1.2727 27.669-2.9624 10.061-0.81813 10.061-0.5501 7.5461-0.20152 2.5154-0.023344v0" clip-path="url(#b)" fill="none" stroke="#73af48" stroke-linecap="square"/>
+<path d="m27.495 126.02v-124.94" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".5"/>
+<path d="m477.74 126.02v-124.94" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".5"/>
+<path d="m27.495 126.02h450.25" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".5"/>
 <path d="m27.495 1.08h450.25" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".5"/>
-</g>
-<g id="bi">
-<g id="bj">
-<path d="m353.72 8.1544h4.8 4.8" fill="none" stroke="#5f4690" stroke-linecap="square"/>
-</g>
-<g id="bk">
-<text transform="rotate(-0 368.12 10.254)" x="368.122957" y="10.254375" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px">Model 1</text>
-</g>
-<g id="bl">
-<path d="m353.72 16.837h4.8 4.8" fill="none" stroke="#e17c05" stroke-linecap="square"/>
-</g>
-<g id="bm">
-<text transform="rotate(-0 368.12 18.937)" x="368.122957" y="18.936563" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px">Model 2</text>
-</g>
-<g id="bn">
-<path d="m395.46 8.1544h4.8 4.8" fill="none" stroke="#38a6a5" stroke-linecap="square"/>
-</g>
-<g id="bo">
-<text transform="rotate(-0 409.86 10.254)" x="409.86327" y="10.254375" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px">Model 3</text>
-</g>
-<g id="bp">
-<path d="m395.46 16.837h4.8 4.8" fill="none" stroke="#cc503e" stroke-linecap="square"/>
-</g>
-<g id="bq">
-<text transform="rotate(-0 409.86 18.937)" x="409.86327" y="18.936563" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px">Model 4</text>
-</g>
-<g id="br">
-<path d="m437.2 8.1544h4.8 4.8" fill="none" stroke="#1d6996" stroke-linecap="square"/>
-</g>
-<g id="bs">
-<text transform="rotate(-0 451.6 10.254)" x="451.603582" y="10.254375" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px">Model 5</text>
-</g>
-<g id="bt">
-<path d="m437.2 16.837h4.8 4.8" fill="none" stroke="#73af48" stroke-linecap="square"/>
-</g>
-<g id="bu">
-<text transform="rotate(-0 451.6 18.937)" x="451.603582" y="18.936563" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px">Model 6</text>
-</g>
-</g>
-</g>
-</g>
+<path d="m228.5 8.1544h4.8 4.8" fill="none" stroke="#5f4690" stroke-linecap="square"/>
+<text transform="rotate(-0 242.9 10.254)" x="242.90202" y="10.254375" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px">Model 1</text>
+<path d="m270.24 8.1544h4.8 4.8" fill="none" stroke="#e17c05" stroke-linecap="square"/>
+<text transform="rotate(-0 284.64 10.254)" x="284.642332" y="10.254375" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px">Model 2</text>
+<path d="m311.98 8.1544h4.8 4.8" fill="none" stroke="#38a6a5" stroke-linecap="square"/>
+<text transform="rotate(-0 326.38 10.254)" x="326.382645" y="10.254375" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px">Model 3</text>
+<path d="m353.72 8.1544h4.8 4.8" fill="none" stroke="#cc503e" stroke-linecap="square"/>
+<text transform="rotate(-0 368.12 10.254)" x="368.122957" y="10.254375" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px">Model 4</text>
+<path d="m395.46 8.1544h4.8 4.8" fill="none" stroke="#1d6996" stroke-linecap="square"/>
+<text transform="rotate(-0 409.86 10.254)" x="409.86327" y="10.254375" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px">Model 5</text>
+<path d="m437.2 8.1544h4.8 4.8" fill="none" stroke="#73af48" stroke-linecap="square"/>
+<text transform="rotate(-0 451.6 10.254)" x="451.603582" y="10.254375" font-family="'Helvetica', 'Helvetica Neue', 'Arial', 'Nimbus Sans', 'DejaVu Sans', sans-serif" font-size="6px">Model 6</text>
 <defs>
 <clipPath id="b">
-<rect x="27.495" y="1.08" width="450.25" height="124.86"/>
+<rect x="27.495" y="1.08" width="450.25" height="124.94"/>
 </clipPath>
 </defs>
 </svg>
