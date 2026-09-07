@@ -2,6 +2,7 @@
 
 from pathlib import Path
 
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -13,24 +14,26 @@ rng = np.random.default_rng(12)
 
 
 def save(fig, name):
-    fig.savefig(OUT / f"{name}.svg")
+    fig.savefig(OUT / f"{name}.png", dpi=180)
+    with mpl.rc_context({"svg.fonttype": "path"}):
+        fig.savefig(OUT / f"{name}.svg")
     plt.close(fig)
 
 
 def lines():
-    ps.use(tex=False)
+    ps.use()
     x = np.linspace(0, 10, 180)
     fig, ax = plt.subplots(figsize=ps.size("wide", ratio=0.32))
     for i, phase in enumerate(np.linspace(0, 3.5, 6)):
         y = np.exp(-0.12 * x) * (0.63 + 0.16 * np.sin(x + phase)) + 0.022 * phase
         ax.plot(x, y, label=f"Model {i + 1}")
     ax.set(xlabel=r"Training step ($\times 10^3$)", ylabel="Validation error", xlim=(0, 10))
-    ax.legend(ncols=3)
+    ax.legend(ncols=6)
     save(fig, "lines")
 
 
 def bars():
-    ps.use(palette="gradient", tex=False)
+    ps.use(palette="gradient")
     names = ["MACE", "ORB", "eqV2", "SevenNet", "GRACE", "MatterSim"]
     values = [0.82, 0.76, 0.88, 0.71, 0.79, 0.84]
     fig, ax = plt.subplots(figsize=ps.size("wide", ratio=0.27))
@@ -41,8 +44,8 @@ def bars():
 
 
 def scatter():
-    ps.use(tex=False)
-    target = rng.uniform(0, 1, 100)
+    ps.use()
+    target = rng.uniform(0, 1, 220)
     pred = target + rng.normal(0, 0.07, len(target))
     fig, ax = plt.subplots(figsize=ps.size("default", ratio=0.78))
     ax.scatter(target, pred, s=12, alpha=0.58, color=ps.colors.CONTRAST[2], rasterized=True)
@@ -52,7 +55,7 @@ def scatter():
 
 
 def variants():
-    ps.use(tex=False)
+    ps.use()
     x = np.linspace(0, 10, 180)
     colors = ps.shades(ps.colors.GRADIENT[3], 4)
     fig, ax = plt.subplots(figsize=ps.size("wide", ratio=0.31))
@@ -65,13 +68,13 @@ def variants():
 
 
 def distributions():
-    ps.use(tex=False)
+    ps.use()
     groups = [
-        rng.normal(0.73, 0.09, 35),
-        rng.normal(0.61, 0.08, 35),
-        rng.normal(0.68, 0.11, 35),
-        rng.normal(0.54, 0.07, 35),
-        rng.normal(0.64, 0.09, 35),
+        rng.normal(0.73, 0.09, 70),
+        rng.normal(0.61, 0.08, 70),
+        rng.normal(0.68, 0.11, 70),
+        rng.normal(0.54, 0.07, 70),
+        rng.normal(0.64, 0.09, 70),
     ]
     fig, ax = plt.subplots(figsize=ps.size("wide", ratio=0.30))
     positions = np.arange(len(groups))
@@ -80,6 +83,7 @@ def distributions():
         body.set_facecolor("none")
         body.set_edgecolor(ps.colors.BLACK)
         body.set_linewidth(0.7)
+        body.set_alpha(1)
     for i, values in enumerate(groups):
         jitter = rng.normal(0, 0.045, len(values))
         ax.scatter(positions[i] + jitter, values, s=12, alpha=0.5, color=ps.colors.GRADIENT[i], rasterized=True)
@@ -90,7 +94,7 @@ def distributions():
 
 
 def iclr_panels():
-    ps.use("iclr", ncols=2, ratio=0.72, tex=False)
+    ps.use("iclr", ncols=2, ratio=0.72)
     fig, axes = plt.subplots(1, 2)
     for i, ax in enumerate(axes):
         x = np.linspace(0, 1, 120)
