@@ -29,7 +29,6 @@ _DEFAULT_RATIO = 0.618
 _TEX_PREAMBLE = (
     r"\usepackage{times} "
     r"\renewcommand{\familydefault}{\sfdefault} "
-    r"\usepackage{sansmath} \sansmath "
     r"\usepackage{upgreek}"
 )
 
@@ -127,7 +126,7 @@ def style(
             "Nimbus Sans",
             "DejaVu Sans",
         ],
-        "mathtext.fontset": "stixsans",
+        "mathtext.fontset": "stix",
         "font.size": 8.0,
         "axes.labelsize": 8.0,
         "axes.titlesize": 8.0,
