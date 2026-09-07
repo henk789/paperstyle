@@ -14,6 +14,12 @@ MOFSimBench-inspired typography, publication sizing, palettes, and matching Figm
 uv add git+https://github.com/henk789/paperstyle
 ```
 
+Pin a release for a paper:
+
+```bash
+uv add git+https://github.com/henk789/paperstyle --tag v0.1.0
+```
+
 Or with pip:
 
 ```bash
@@ -74,7 +80,7 @@ brew install --cask mactex-no-gui
 
 `contrast` is the default for overlapping lines. `gradient` keeps the smooth Prism ordering for bars and categories where position already carries identity.
 
-<img src="docs/palettes.png" width="900">
+<img src="docs/palettes.svg" width="900">
 
 ```python
 ps.colors.CONTRAST
@@ -86,7 +92,7 @@ ps.shades(ps.colors.GRADIENT[3], 4)
 
 ### Lines — default contrast palette
 
-<img src="docs/lines.png" width="900">
+<img src="docs/lines.svg" width="900">
 
 <details>
 <summary>Code</summary>
@@ -113,7 +119,7 @@ ax.legend(ncols=3)
 
 ### Bars — gradient palette
 
-<img src="docs/bars.png" width="900">
+<img src="docs/bars.svg" width="900">
 
 <details>
 <summary>Code</summary>
@@ -136,7 +142,7 @@ ax.grid(axis="y")
 
 ### Parity scatter
 
-<img src="docs/scatter.png" width="520">
+<img src="docs/scatter.svg" width="520">
 
 <details>
 <summary>Code</summary>
@@ -158,54 +164,9 @@ ax.plot([0, 1], [0, 1], color=ps.colors.GREY_DARK, zorder=-10)
 
 </details>
 
-### Related model variants
-
-<img src="docs/variants.png" width="900">
-
-<details>
-<summary>Code</summary>
-
-```python
-ps.use()
-
-colors = ps.shades(ps.colors.GRADIENT[3], 4)
-
-for i, color in enumerate(colors):
-    ax.plot(x, ys[i], color=color, label=f"Variant {i + 1}")
-```
-
-</details>
-
-### Distributions
-
-<img src="docs/distributions.png" width="900">
-
-<details>
-<summary>Code</summary>
-
-```python
-ps.use()
-
-violins = ax.violinplot(
-    groups,
-    showmeans=False,
-    showmedians=False,
-    showextrema=False,
-)
-
-for body in violins["bodies"]:
-    body.set_facecolor("none")
-    body.set_edgecolor(ps.colors.BLACK)
-    body.set_linewidth(0.7)
-
-ax.grid(axis="y")
-```
-
-</details>
-
 ### ICLR multi-panel
 
-<img src="docs/iclr_panels.png" width="760">
+<img src="docs/iclr_panels.svg" width="760">
 
 <details>
 <summary>Code</summary>
