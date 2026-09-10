@@ -5,8 +5,8 @@ from pathlib import Path
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
-
 import paperstyle as ps
+from matplotlib.ticker import PercentFormatter
 
 OUT = Path(__file__).parents[1] / "docs"
 OUT.mkdir(exist_ok=True)
@@ -27,7 +27,9 @@ def lines():
     for i, phase in enumerate(np.linspace(0, 3.5, 6)):
         y = np.exp(-0.12 * x) * (0.63 + 0.16 * np.sin(x + phase)) + 0.022 * phase
         ax.plot(x, y, label=f"Model {i + 1}")
-    ax.set(xlabel=r"Training step ($\times 10^3$)", ylabel="Validation error", xlim=(0, 10))
+    ax.set(
+        xlabel=r"Training step ($\times 10^3$)", ylabel="Validation error", xlim=(0, 10)
+    )
     ax.legend(ncols=6)
     save(fig, "lines")
 
@@ -37,7 +39,7 @@ def bars():
     names = ["MACE", "ORB", "eqV2", "SevenNet", "GRACE", "MatterSim"]
     values = [0.82, 0.76, 0.88, 0.71, 0.79, 0.84]
     fig, ax = plt.subplots(figsize=ps.size("wide", ratio=0.27))
-    ax.bar(names, values, width=0.66, color=ps.colors.GRADIENT[:len(names)])
+    ax.bar(names, values, width=0.66, color=ps.colors.GRADIENT[: len(names)])
     ax.grid(axis="y")
     ax.set(ylabel="Success rate", ylim=(0.6, 0.92))
     save(fig, "bars")
@@ -48,7 +50,9 @@ def scatter():
     target = rng.uniform(0, 1, 220)
     pred = target + rng.normal(0, 0.07, len(target))
     fig, ax = plt.subplots(figsize=ps.size("default", ratio=0.78))
-    ax.scatter(target, pred, s=12, alpha=0.58, color=ps.colors.CONTRAST[2], rasterized=True)
+    ax.scatter(
+        target, pred, s=12, alpha=0.58, color=ps.colors.CONTRAST[2], rasterized=True
+    )
     ax.plot([0, 1], [0, 1], color=ps.colors.GREY_DARK, zorder=-10)
     ax.set(xlabel="Reference", ylabel="Prediction", xlim=(0, 1), ylim=(0, 1))
     save(fig, "scatter")
@@ -78,7 +82,14 @@ def distributions():
     ]
     fig, ax = plt.subplots(figsize=ps.size("wide", ratio=0.30))
     positions = np.arange(len(groups))
-    violins = ax.violinplot(groups, positions=positions, widths=0.65, showmeans=False, showmedians=False, showextrema=False)
+    violins = ax.violinplot(
+        groups,
+        positions=positions,
+        widths=0.65,
+        showmeans=False,
+        showmedians=False,
+        showextrema=False,
+    )
     for body in violins["bodies"]:
         body.set_facecolor("none")
         body.set_edgecolor(ps.colors.BLACK)
@@ -86,7 +97,14 @@ def distributions():
         body.set_alpha(1)
     for i, values in enumerate(groups):
         jitter = rng.normal(0, 0.045, len(values))
-        ax.scatter(positions[i] + jitter, values, s=12, alpha=0.5, color=ps.colors.GRADIENT[i], rasterized=True)
+        ax.scatter(
+            positions[i] + jitter,
+            values,
+            s=12,
+            alpha=0.5,
+            color=ps.colors.GRADIENT[i],
+            rasterized=True,
+        )
     ax.grid(axis="y")
     ax.set_xticks(positions, ["MACE", "ORB", "eqV2", "SevenNet", "GRACE"])
     ax.set_ylabel("Relative error")
@@ -94,18 +112,66 @@ def distributions():
 
 
 def iclr_panels():
-    ps.use("iclr", ncols=2, ratio=0.72)
-    fig, axes = plt.subplots(1, 2)
-    fig.subplots_adjust(top=0.84)
-    for i, ax in enumerate(axes):
-        x = np.linspace(0, 1, 120)
-        for j in range(3):
-            ax.plot(x, (j + 1) * (x ** (1.2 + 0.2 * i)) / 3, label=f"Method {j + 1}")
-        ax.set_xlabel("Normalized time")
-        ax.set_title(["Reconstruction", "Generation"][i])
-        ps.panel_label(ax, chr(ord("a") + i))
-    axes[0].set_ylabel("Score")
-    axes[1].legend()
+    ps.use("iclr", ratio=0.46)
+    fig = plt.figure(figsize=ps.size("iclr", ratio=0.46))
+    fig.set_layout_engine("none")
+    outer = fig.add_gridspec(
+        1,
+        2,
+        width_ratios=(1.0, 1.6),
+        left=0.11,
+        right=0.98,
+        top=0.82,
+        bottom=0.29,
+        wspace=0.32,
+    )
+
+    validity = fig.add_subplot(outer[0, 0])
+    sizes = np.arange(4)
+    rates = (
+        (0.985, 0.974, 0.956, 0.941),
+        (0.979, 0.958, 0.929, 0.901),
+        (0.971, 0.943, 0.912, 0.884),
+    )
+    names = ("Method A (ours)", "Method B", "Method C")
+    for name, values in zip(names, rates, strict=True):
+        validity.plot(sizes, values, marker="o", label=name)
+    validity.set_title("Validity")
+    validity.set_xlabel("System size")
+    validity.set_ylabel("Valid structures")
+    validity.set_xticks(sizes, ("Small", "Medium", "Large", "XL"))
+    validity.set_ylim(0.86, 1.0)
+    validity.yaxis.set_major_formatter(PercentFormatter(1.0, decimals=0))
+    validity.grid(axis="y")
+
+    distribution_grid = outer[0, 1].subgridspec(2, 2, hspace=0.58, wspace=0.32)
+    distribution_axes = []
+    x = np.linspace(0, 4, 120)
+    for index in range(4):
+        ax = fig.add_subplot(distribution_grid[index // 2, index % 2])
+        distribution_axes.append(ax)
+        center = 1.35 + 0.28 * index
+        for method in range(3):
+            curve = np.exp(-0.5 * ((x - center - 0.10 * method) / 0.42) ** 2)
+            ax.plot(x, curve, color=ps.colors.CONTRAST[method])
+        if index < 2:
+            ax.set_title(("Small", "Large")[index])
+            ax.set_xticklabels([])
+        else:
+            ax.set_xlabel("Distance")
+        if index % 2:
+            ax.set_yticklabels([])
+        else:
+            ax.set_ylabel("Density")
+
+    ps.panel_labels(fig, (validity, distribution_axes[0]), ("a", "b"))
+    fig.legend(
+        handles=validity.lines,
+        labels=names,
+        loc="lower center",
+        bbox_to_anchor=(0.5, 0.055),
+        ncols=3,
+    )
     save(fig, "iclr_panels")
 
 

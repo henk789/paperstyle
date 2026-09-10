@@ -44,7 +44,7 @@ LaTeX is enabled by default. If a working TeX setup is unavailable, `paperstyle`
 | What | Usage |
 | --- | --- |
 | Default style + contrast palette | `ps.use()` |
-| ICLR width | `ps.use("iclr")` |
+| ICLR full width (5.5 in) | `ps.use("iclr")` |
 | Two-column single column | `ps.use("column")` |
 | Two-column full width | `ps.use("wide")` |
 | Prism/gradient palette | `ps.use(palette="gradient")` |
@@ -52,6 +52,7 @@ LaTeX is enabled by default. If a working TeX setup is unavailable, `paperstyle`
 | Custom size | `ps.size("iclr", ratio=0.45)` |
 | Related colors | `ps.shades(color, 4)` |
 | Rounded panel label | `ps.panel_label(ax, "a")` |
+| Aligned major-panel labels | `ps.panel_labels(fig, axes, ("a", "b"))` |
 | Temporary style | `with ps.context("iclr"):` |
 
 Explicit Matplotlib arguments always win:
@@ -72,8 +73,11 @@ defaults.
 Use normal Matplotlib calls such as `set_title`, `set_xlabel`, `set_ylabel`, and
 `legend`, and prefer their default placement. Add custom positioning, colored
 axis text, or decorative framing only when it communicates something specific
-about the data. See the concise [look guide](docs/look-guide.md) for the design
-rules used by the examples.
+about the data. Multi-panel figures should use aligned outer grids, centered
+local titles, shared panel-label baselines, and deliberately reserved legend
+space. Export on the publication-sized canvas without `bbox_inches="tight"`.
+See the [look guide and per-figure checklist](docs/look-guide.md) for the rules
+used by the examples.
 
 <details>
 <summary>TeX setup</summary>
@@ -188,13 +192,22 @@ ax.plot([0, 1], [0, 1], color=ps.colors.GREY_DARK, zorder=-10)
 <summary>Code</summary>
 
 ```python
-ps.use("iclr", ncols=2, ratio=0.72)
+ps.use("iclr", ratio=0.46)
+fig = plt.figure(figsize=ps.size("iclr", ratio=0.46))
+fig.set_layout_engine("none")
+outer = fig.add_gridspec(1, 2, left=0.11, right=0.98, top=0.82,
+                         bottom=0.29, wspace=0.32)
 
-fig, axes = plt.subplots(1, 2)
-fig.subplots_adjust(top=0.84)
-for label, ax in zip(("a", "b"), axes):
-    ps.panel_label(ax, label)
+left = fig.add_subplot(outer[0, 0])
+right_grid = outer[0, 1].subgridspec(2, 2)
+right = [fig.add_subplot(cell) for cell in right_grid]
+
+# Draw the data and centered local titles, then add labels after layout.
+ps.panel_labels(fig, (left, right[0]), ("a", "b"))
 ```
+
+The complete reproducible source, including reserved legend space, is in
+[`examples/render.py`](examples/render.py).
 
 </details>
 

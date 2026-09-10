@@ -159,7 +159,7 @@ def style(
         "legend.columnspacing": 1.0,
         "figure.dpi": 144,
         "savefig.dpi": 300,
-        "savefig.bbox": "tight",
+        "savefig.bbox": None,
         "savefig.pad_inches": 0.04,
         "figure.constrained_layout.use": True,
         "pdf.fonttype": 42,
@@ -186,20 +186,23 @@ def panel_label(
     x: float = 0.0,
     y: float = 1.12,
     ha: str = "left",
+    transform=None,
 ):
     """Add a panel label with the standard rounded backdrop."""
+    transform = ax.transAxes if transform is None else transform
+
     # Separate artists allow an optical correction without moving the backdrop.
     ax.text(
         x,
         y,
         label,
-        transform=ax.transAxes,
+        transform=transform,
         ha=ha,
         va="center",
         fontweight="bold",
         color="none",
         bbox={
-            "boxstyle": "round,pad=0.25",
+            "boxstyle": "round,pad=0.28",
             "facecolor": colors.SURFACE,
             "edgecolor": "none",
         },
@@ -211,7 +214,7 @@ def panel_label(
         y,
         label,
         transform=offset_copy(
-            ax.transAxes,
+            transform,
             fig=ax.figure,
             y=-0.75,
             units="points",
@@ -222,6 +225,48 @@ def panel_label(
         clip_on=False,
         zorder=101,
     )
+
+
+def panel_labels(
+    fig,
+    axes: Sequence,
+    labels: Sequence[str],
+    *,
+    x_offset: float = 12.5,
+    y_offset: float = 5.0,
+):
+    """Add major-panel labels on one baseline, aligned to panel left edges.
+
+    Offsets are in points. The shared baseline follows the first panel title,
+    or the top of the axes when no panel has a title.
+    """
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    title_axis = next((ax for ax in axes if ax.get_title()), None)
+
+    if title_axis is None:
+        label_y = max(ax.get_window_extent(renderer).y1 for ax in axes)
+    else:
+        title_bounds = title_axis.title.get_window_extent(renderer)
+        label_y = (title_bounds.y0 + title_bounds.y1) / 2
+    label_y += y_offset * fig.dpi / 72
+
+    to_figure = fig.transFigure.inverted()
+    artists = []
+    for label, ax in zip(labels, axes, strict=True):
+        label_x = ax.get_window_extent(renderer).x0 - x_offset * fig.dpi / 72
+        x, y = to_figure.transform((label_x, label_y))
+        artists.append(
+            panel_label(
+                ax,
+                label,
+                x=x,
+                y=y,
+                ha="right",
+                transform=fig.transFigure,
+            )
+        )
+    return tuple(artists)
 
 
 def use(
