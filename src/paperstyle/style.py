@@ -5,9 +5,9 @@ from __future__ import annotations
 import colorsys
 import shutil
 import warnings
+from collections.abc import Sequence
 from contextlib import contextmanager
 from functools import lru_cache
-from typing import Sequence
 
 import matplotlib as mpl
 from cycler import cycler

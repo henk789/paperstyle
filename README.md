@@ -2,9 +2,10 @@
 
 # paperstyle
 
-**Opinionated Matplotlib styling for research figures.**
+**A slightly tuned Matplotlib default for research figures.**
 
-MOFSimBench-inspired typography, publication sizing, palettes, and matching Figma color tokens.
+Publication sizing, restrained typography, palettes, and matching Figma color
+tokens without replacing Matplotlib's visual language.
 
 </div>
 
@@ -58,6 +59,20 @@ Explicit Matplotlib arguments always win:
 ps.use("iclr")
 fig, ax = plt.subplots(figsize=(4.2, 2.4))
 ```
+
+## Look guide
+
+Paperstyle should look like a polished Matplotlib figure, not like a custom
+plotting framework. It sets publication sizes, a compact type scale, light line
+weights, export defaults, and a useful color cycle. Ordinary axis colors, title
+placement, label placement, ticks, and spines remain recognizable Matplotlib
+defaults.
+
+Use normal Matplotlib calls such as `set_title`, `set_xlabel`, `set_ylabel`, and
+`legend`, and prefer their default placement. Add custom positioning, colored
+axis text, or decorative framing only when it communicates something specific
+about the data. See the concise [look guide](docs/look-guide.md) for the design
+rules used by the examples.
 
 <details>
 <summary>TeX setup</summary>
