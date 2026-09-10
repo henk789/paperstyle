@@ -213,7 +213,7 @@ def panel_label(
         transform=offset_copy(
             ax.transAxes,
             fig=ax.figure,
-            y=-1.5,
+            y=-0.75,
             units="points",
         ),
         ha=ha,
