@@ -24,9 +24,11 @@ styling.
   `paperstyle.panel_label`; its rounded, low-contrast backdrop keeps the label
   distinct without becoming decorative. Adjust its `x` and `y` position for
   composite layouts instead of allowing it to collide with a title or panel.
-  Major panel labels in the same figure must share one horizontal baseline,
-  and each label's left edge should align with its panel's outer left border.
-  Reserve a common header strip instead of nudging labels to different heights.
+  Major panel labels in the same figure must share one horizontal baseline and
+  align vertically with their panel titles. When labels sit outside the axes,
+  place the backdrop's right edge a small, consistent distance before the
+  panel's outer y-axis. Center the label glyph vertically within its backdrop.
+  Do not nudge labels to different heights.
 - Center subplot titles when titles are useful. Let the panel label, rather than
   title alignment, identify the panel.
 - Let paperstyle provide publication dimensions, typography, line weights,

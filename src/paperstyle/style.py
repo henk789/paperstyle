@@ -14,6 +14,7 @@ from cycler import cycler
 from matplotlib import colors as mpl_colors
 from matplotlib.backends.backend_agg import FigureCanvasAgg
 from matplotlib.figure import Figure
+from matplotlib.transforms import offset_copy
 
 from . import colors
 
@@ -178,23 +179,48 @@ def style(
     return params
 
 
-def panel_label(ax, label: str, *, x: float = 0.0, y: float = 1.08):
-    """Add a left-aligned panel label in the whitespace above an axes."""
-    return ax.text(
+def panel_label(
+    ax,
+    label: str,
+    *,
+    x: float = 0.0,
+    y: float = 1.12,
+    ha: str = "left",
+):
+    """Add a panel label with the standard rounded backdrop."""
+    # Separate artists allow an optical correction without moving the backdrop.
+    ax.text(
         x,
         y,
         label,
         transform=ax.transAxes,
-        ha="left",
-        va="bottom",
+        ha=ha,
+        va="center",
         fontweight="bold",
+        color="none",
         bbox={
-            "boxstyle": "round,pad=0.22",
+            "boxstyle": "round,pad=0.25",
             "facecolor": colors.SURFACE,
             "edgecolor": "none",
         },
         clip_on=False,
         zorder=100,
+    )
+    return ax.text(
+        x,
+        y,
+        label,
+        transform=offset_copy(
+            ax.transAxes,
+            fig=ax.figure,
+            y=-1.5,
+            units="points",
+        ),
+        ha=ha,
+        va="center",
+        fontweight="bold",
+        clip_on=False,
+        zorder=101,
     )
 
 
