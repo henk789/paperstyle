@@ -71,12 +71,16 @@ styling.
 - Match the canvas to the publication width and keep every artist inside it.
   ICLR full width is 5.5 inches. Choose height from the content; a golden-ratio
   default is only a starting point, especially for compact composite figures.
+- Choose `tex=True` or `tex=False` explicitly in reproducible plotting scripts.
+  The automatic fallback is convenient interactively but changes typography.
 - Do not use `bbox_inches="tight"` for publication figures. It changes the file
   bounds and therefore the effective typography and line weights when LaTeX
   scales the result back to `\linewidth`.
 - Export vector PDF and high-resolution PNG from the same plotting script.
   Avoid manual post-processing and separate plotting paths for compact and full
   variants; share data loading, encodings, and styling wherever possible.
+- Use `paperstyle.savefig(fig, path)` for the standard PDF/PNG pair. It preserves
+  the configured canvas and creates the output directory when needed.
 - Inspect every final format at its intended paper size. Confirm that the canvas
   dimensions are unchanged and that no label, confidence band, or legend is
   clipped or uncomfortably close to another element.

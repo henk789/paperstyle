@@ -2,7 +2,6 @@
 
 from pathlib import Path
 
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import paperstyle as ps
@@ -14,14 +13,12 @@ rng = np.random.default_rng(12)
 
 
 def save(fig, name):
-    fig.savefig(OUT / f"{name}.png", dpi=180)
-    with mpl.rc_context({"svg.fonttype": "path"}):
-        fig.savefig(OUT / f"{name}.svg")
+    ps.savefig(fig, OUT / name, formats=("pdf", "png", "svg"), dpi=300)
     plt.close(fig)
 
 
 def lines():
-    ps.use()
+    ps.use(tex=False)
     x = np.linspace(0, 10, 180)
     fig, ax = plt.subplots(figsize=ps.size("wide", ratio=0.32))
     for i, phase in enumerate(np.linspace(0, 3.5, 6)):
@@ -35,18 +32,19 @@ def lines():
 
 
 def bars():
-    ps.use(palette="gradient")
+    ps.use(tex=False, palette="gradient")
     names = ["MACE", "ORB", "eqV2", "SevenNet", "GRACE", "MatterSim"]
     values = [0.82, 0.76, 0.88, 0.71, 0.79, 0.84]
     fig, ax = plt.subplots(figsize=ps.size("wide", ratio=0.27))
     ax.bar(names, values, width=0.66, color=ps.colors.GRADIENT[: len(names)])
     ax.grid(axis="y")
     ax.set(ylabel="Success rate", ylim=(0.6, 0.92))
+    ax.yaxis.set_major_formatter(PercentFormatter(1.0, decimals=0))
     save(fig, "bars")
 
 
 def scatter():
-    ps.use()
+    ps.use(tex=False)
     target = rng.uniform(0, 1, 220)
     pred = target + rng.normal(0, 0.07, len(target))
     fig, ax = plt.subplots(figsize=ps.size("default", ratio=0.78))
@@ -59,7 +57,7 @@ def scatter():
 
 
 def variants():
-    ps.use()
+    ps.use(tex=False)
     x = np.linspace(0, 10, 180)
     colors = ps.shades(ps.colors.GRADIENT[3], 4)
     fig, ax = plt.subplots(figsize=ps.size("wide", ratio=0.31))
@@ -72,7 +70,7 @@ def variants():
 
 
 def distributions():
-    ps.use()
+    ps.use(tex=False)
     groups = [
         rng.normal(0.73, 0.09, 70),
         rng.normal(0.61, 0.08, 70),
@@ -112,8 +110,8 @@ def distributions():
 
 
 def iclr_panels():
-    ps.use("iclr", ratio=0.46)
-    fig = plt.figure(figsize=ps.size("iclr", ratio=0.46))
+    ps.use("iclr", height=2.53, tex=False)
+    fig = plt.figure()
     fig.set_layout_engine("none")
     outer = fig.add_gridspec(
         1,

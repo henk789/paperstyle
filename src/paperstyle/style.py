@@ -8,6 +8,7 @@ import warnings
 from collections.abc import Sequence
 from contextlib import contextmanager
 from functools import lru_cache
+from pathlib import Path
 
 import matplotlib as mpl
 from cycler import cycler
@@ -53,11 +54,36 @@ def size(
     ratio: float = _DEFAULT_RATIO,
     nrows: int = 1,
     ncols: int = 1,
+    height: float | None = None,
 ) -> tuple[float, float]:
-    """Return a publication-aware Matplotlib figure size in inches."""
+    """Return a publication size in inches; ``height`` overrides the ratio."""
     width = _WIDTHS[preset]
+    if height is not None:
+        return width, height
+
     subplot_width = width / ncols
     return width, ratio * subplot_width * nrows
+
+
+def savefig(
+    fig,
+    path: str | Path,
+    *,
+    formats: Sequence[str] = ("pdf", "png"),
+    dpi: int | None = None,
+) -> tuple[Path, ...]:
+    """Save one fixed-size figure as PDF and PNG, or in requested formats."""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    outputs = tuple(path.with_suffix(f".{suffix.lstrip('.')}") for suffix in formats)
+
+    kwargs = {"bbox_inches": None, "facecolor": "white"}
+    if dpi is not None:
+        kwargs["dpi"] = dpi
+
+    for output in outputs:
+        fig.savefig(output, **kwargs)
+    return outputs
 
 
 def lighten(color: str, amount: float = 1.2) -> str:
@@ -111,6 +137,7 @@ def style(
     ratio: float = _DEFAULT_RATIO,
     nrows: int = 1,
     ncols: int = 1,
+    height: float | None = None,
 ) -> dict:
     """Return the paperstyle rcParams dictionary."""
     use_tex = tex and _tex_available()
@@ -172,6 +199,7 @@ def style(
             ratio=ratio,
             nrows=nrows,
             ncols=ncols,
+            height=height,
         ),
     }
     if use_tex:
@@ -277,6 +305,7 @@ def use(
     ratio: float = _DEFAULT_RATIO,
     nrows: int = 1,
     ncols: int = 1,
+    height: float | None = None,
 ) -> None:
     """Apply paperstyle globally to Matplotlib."""
     mpl.rcParams.update(
@@ -287,6 +316,7 @@ def use(
             ratio=ratio,
             nrows=nrows,
             ncols=ncols,
+            height=height,
         )
     )
 
@@ -300,6 +330,7 @@ def context(
     ratio: float = _DEFAULT_RATIO,
     nrows: int = 1,
     ncols: int = 1,
+    height: float | None = None,
 ):
     """Temporarily apply paperstyle inside a with block."""
     with mpl.rc_context(
@@ -310,6 +341,7 @@ def context(
             ratio=ratio,
             nrows=nrows,
             ncols=ncols,
+            height=height,
         )
     ):
         yield

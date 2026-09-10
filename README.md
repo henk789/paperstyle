@@ -39,6 +39,18 @@ fig, ax = plt.subplots()
 ax.plot(x, y)
 ```
 
+For a fixed-size ICLR figure with matching PDF and PNG output:
+
+```python
+ps.use("iclr", height=2.4, tex=False)
+
+fig, ax = plt.subplots()
+ax.plot(x, y)
+ax.set(xlabel="Input size", ylabel="Accuracy")
+
+ps.savefig(fig, "figures/result")
+```
+
 LaTeX is enabled by default. If a working TeX setup is unavailable, `paperstyle` warns with setup instructions and falls back to Matplotlib text.
 
 | What | Usage |
@@ -49,17 +61,19 @@ LaTeX is enabled by default. If a working TeX setup is unavailable, `paperstyle`
 | Two-column full width | `ps.use("wide")` |
 | Prism/gradient palette | `ps.use(palette="gradient")` |
 | Disable TeX | `ps.use(tex=False)` |
-| Custom size | `ps.size("iclr", ratio=0.45)` |
+| Fixed publication height | `ps.use("iclr", height=2.4)` |
+| Computed custom size | `ps.size("iclr", ratio=0.45)` |
 | Related colors | `ps.shades(color, 4)` |
 | Rounded panel label | `ps.panel_label(ax, "a")` |
 | Aligned major-panel labels | `ps.panel_labels(fig, axes, ("a", "b"))` |
+| Export PDF and PNG | `ps.savefig(fig, "figures/result")` |
 | Temporary style | `with ps.context("iclr"):` |
 
 Explicit Matplotlib arguments always win:
 
 ```python
 ps.use("iclr")
-fig, ax = plt.subplots(figsize=(4.2, 2.4))
+fig, ax = plt.subplots(figsize=ps.size("iclr", height=2.4))
 ```
 
 ## Look guide
@@ -114,6 +128,8 @@ ps.shades(ps.colors.GRADIENT[3], 4)
 
 <img src="docs/lines.svg" width="900">
 
+[PDF](docs/lines.pdf) · [PNG](docs/lines.png)
+
 <details>
 <summary>Code</summary>
 
@@ -141,12 +157,15 @@ ax.legend(ncols=3)
 
 <img src="docs/bars.svg" width="900">
 
+[PDF](docs/bars.pdf) · [PNG](docs/bars.png)
+
 <details>
 <summary>Code</summary>
 
 ```python
 import matplotlib.pyplot as plt
 import paperstyle as ps
+from matplotlib.ticker import PercentFormatter
 
 ps.use(palette="gradient")
 
@@ -156,6 +175,7 @@ values = [0.82, 0.76, 0.88, 0.71, 0.79, 0.84]
 fig, ax = plt.subplots(figsize=ps.size("wide", ratio=0.27))
 ax.bar(names, values, color=ps.colors.GRADIENT[:len(names)])
 ax.grid(axis="y")
+ax.yaxis.set_major_formatter(PercentFormatter(1.0, decimals=0))
 ```
 
 </details>
@@ -163,6 +183,8 @@ ax.grid(axis="y")
 ### Parity scatter
 
 <img src="docs/scatter.svg" width="520">
+
+[PDF](docs/scatter.pdf) · [PNG](docs/scatter.png)
 
 <details>
 <summary>Code</summary>
@@ -184,16 +206,30 @@ ax.plot([0, 1], [0, 1], color=ps.colors.GREY_DARK, zorder=-10)
 
 </details>
 
+### Related-model variants
+
+<img src="docs/variants.svg" width="900">
+
+[PDF](docs/variants.pdf) · [PNG](docs/variants.png)
+
+### Distribution comparison
+
+<img src="docs/distributions.svg" width="900">
+
+[PDF](docs/distributions.pdf) · [PNG](docs/distributions.png)
+
 ### ICLR multi-panel
 
 <img src="docs/iclr_panels.svg" width="760">
+
+[PDF](docs/iclr_panels.pdf) · [PNG](docs/iclr_panels.png)
 
 <details>
 <summary>Code</summary>
 
 ```python
-ps.use("iclr", ratio=0.46)
-fig = plt.figure(figsize=ps.size("iclr", ratio=0.46))
+ps.use("iclr", height=2.53, tex=False)
+fig = plt.figure()
 fig.set_layout_engine("none")
 outer = fig.add_gridspec(1, 2, left=0.11, right=0.98, top=0.82,
                          bottom=0.29, wspace=0.32)
@@ -204,6 +240,7 @@ right = [fig.add_subplot(cell) for cell in right_grid]
 
 # Draw the data and centered local titles, then add labels after layout.
 ps.panel_labels(fig, (left, right[0]), ("a", "b"))
+ps.savefig(fig, "figures/iclr_panels")
 ```
 
 The complete reproducible source, including reserved legend space, is in
