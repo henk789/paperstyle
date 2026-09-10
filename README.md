@@ -51,6 +51,7 @@ LaTeX is enabled by default. If a working TeX setup is unavailable, `paperstyle`
 | Disable TeX | `ps.use(tex=False)` |
 | Custom size | `ps.size("iclr", ratio=0.45)` |
 | Related colors | `ps.shades(color, 4)` |
+| Rounded panel label | `ps.panel_label(ax, "a)")` |
 | Temporary style | `with ps.context("iclr"):` |
 
 Explicit Matplotlib arguments always win:
@@ -190,6 +191,8 @@ ax.plot([0, 1], [0, 1], color=ps.colors.GREY_DARK, zorder=-10)
 ps.use("iclr", ncols=2, ratio=0.72)
 
 fig, axes = plt.subplots(1, 2)
+for label, ax in zip(("a)", "b)"), axes):
+    ps.panel_label(ax, label)
 ```
 
 </details>

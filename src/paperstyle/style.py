@@ -130,6 +130,7 @@ def style(
         "font.size": 8.0,
         "axes.labelsize": 8.0,
         "axes.titlesize": 8.0,
+        "axes.titlelocation": "center",
         "legend.fontsize": 6.0,
         "xtick.labelsize": 6.0,
         "ytick.labelsize": 6.0,
@@ -175,6 +176,26 @@ def style(
     if use_tex:
         params["text.latex.preamble"] = _TEX_PREAMBLE
     return params
+
+
+def panel_label(ax, label: str, *, x: float = 0.0, y: float = 1.02):
+    """Add a left-aligned panel label with the standard rounded backdrop."""
+    return ax.text(
+        x,
+        y,
+        label,
+        transform=ax.transAxes,
+        ha="left",
+        va="bottom",
+        fontweight="bold",
+        bbox={
+            "boxstyle": "round,pad=0.22",
+            "facecolor": colors.SURFACE,
+            "edgecolor": "none",
+        },
+        clip_on=False,
+        zorder=100,
+    )
 
 
 def use(

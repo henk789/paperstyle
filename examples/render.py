@@ -102,6 +102,7 @@ def iclr_panels():
             ax.plot(x, (j + 1) * (x ** (1.2 + 0.2 * i)) / 3, label=f"Method {j + 1}")
         ax.set_xlabel("Normalized time")
         ax.set_title(["Reconstruction", "Generation"][i])
+        ps.panel_label(ax, f"{chr(ord('a') + i)})")
     axes[0].set_ylabel("Score")
     axes[1].legend()
     save(fig, "iclr_panels")
