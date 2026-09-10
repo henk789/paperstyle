@@ -96,13 +96,14 @@ def distributions():
 def iclr_panels():
     ps.use("iclr", ncols=2, ratio=0.72)
     fig, axes = plt.subplots(1, 2)
+    fig.subplots_adjust(top=0.84)
     for i, ax in enumerate(axes):
         x = np.linspace(0, 1, 120)
         for j in range(3):
             ax.plot(x, (j + 1) * (x ** (1.2 + 0.2 * i)) / 3, label=f"Method {j + 1}")
         ax.set_xlabel("Normalized time")
         ax.set_title(["Reconstruction", "Generation"][i])
-        ps.panel_label(ax, f"{chr(ord('a') + i)})")
+        ps.panel_label(ax, chr(ord("a") + i))
     axes[0].set_ylabel("Score")
     axes[1].legend()
     save(fig, "iclr_panels")

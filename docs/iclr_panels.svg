@@ -8,8 +8,8 @@
   </style>
   <rect width="100%" height="100%" fill="white"/>
 
-  <rect x="48" y="4" width="28" height="22" rx="5" fill="#ECF1F4"/>
-  <text x="55" y="19" class="panel">a)</text>
+  <rect x="48" y="4" width="22" height="22" rx="5" fill="#ECF1F4"/>
+  <text x="55" y="19" class="panel">a</text>
   <text x="201.25" y="18" text-anchor="middle" class="title">Reconstruction</text>
   <line x1="50" y1="245" x2="352.5" y2="245" stroke="#111" stroke-width="0.8"/>
   <line x1="50" y1="35" x2="50" y2="245" stroke="#111" stroke-width="0.8"/>
@@ -17,8 +17,8 @@
   <polyline points="50,245 110,227 171,203 232,173 292,138 352.5,95" fill="none" stroke="#E17C05" stroke-width="1.6"/>
   <polyline points="50,245 110,214 171,173 232,124 292,68 352.5,35" fill="none" stroke="#38A6A5" stroke-width="1.6"/>
 
-  <rect x="405.5" y="4" width="28" height="22" rx="5" fill="#ECF1F4"/>
-  <text x="412.5" y="19" class="panel">b)</text>
+  <rect x="405.5" y="4" width="22" height="22" rx="5" fill="#ECF1F4"/>
+  <text x="412.5" y="19" class="panel">b</text>
   <text x="558.75" y="18" text-anchor="middle" class="title">Generation</text>
   <line x1="407.5" y1="245" x2="710" y2="245" stroke="#111" stroke-width="0.8"/>
   <line x1="407.5" y1="35" x2="407.5" y2="245" stroke="#111" stroke-width="0.8"/>

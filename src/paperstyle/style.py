@@ -178,8 +178,8 @@ def style(
     return params
 
 
-def panel_label(ax, label: str, *, x: float = 0.0, y: float = 1.02):
-    """Add a left-aligned panel label with the standard rounded backdrop."""
+def panel_label(ax, label: str, *, x: float = 0.0, y: float = 1.08):
+    """Add a left-aligned panel label in the whitespace above an axes."""
     return ax.text(
         x,
         y,
