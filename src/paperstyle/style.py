@@ -159,7 +159,7 @@ def style(
         "figure.dpi": 144,
         "savefig.dpi": 300,
         "savefig.bbox": "tight",
-        "savefig.pad_inches": 0.015,
+        "savefig.pad_inches": 0.04,
         "figure.constrained_layout.use": True,
         "pdf.fonttype": 42,
         "ps.fonttype": 42,

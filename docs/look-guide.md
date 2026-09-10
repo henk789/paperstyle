@@ -15,6 +15,8 @@ styling.
 - Nothing may overlap: not labels, titles, legends, annotations, axes, or data.
   Treat overlap as a figure correctness defect. Reserve enough room in the
   layout and inspect the final exported figure, including its bounding box.
+- Nothing may be clipped by the canvas or export bounding box. Leave visible
+  padding around the outermost labels and other artists in the saved artifact.
 - Use whitespace when it makes grouping, hierarchy, or the data easier to
   understand. Filling every part of the canvas is not a goal.
 - Use lowercase panel labels such as `a` and `b` for multi-panel figures.
